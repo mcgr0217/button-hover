@@ -2,7 +2,7 @@ body{
   text-align:center;
   margin-top: 100px;
   font-family: "Open Sans", sans-serif;
-  background-color: #fff;
+  background-color: $white;
 }
 
 
@@ -13,7 +13,7 @@ div.button{
   padding:13px 23px;
   border: 1px solid #EE3769;
   background-color: #EE3769;
-  color: #fff;
+  color: $white;
   display:inline-block;
   font-size: 14px;
   position: relative;
@@ -28,7 +28,7 @@ div.button.line span.animator{
   width: 300px;
   height: 100%;
   position:absolute;
-  background-color: #fff;
+  background-color: $white;
   top:0;
   left:-10px;
   transition: all 0.5s;
@@ -65,7 +65,7 @@ div.button.round span.animator{
   height: 10px;
   border-radius:300px;
   position:absolute;
-  background-color: #fff;
+  background-color: $white;
   top:0;left: 0;right: 0;bottom: 0;margin:auto;
   transition: all 0.5s;
   z-index: 5;
@@ -105,7 +105,7 @@ div.button.round2 span.animator2{
   height: 10px;
   border-radius:300px;
   position:absolute;
-  background-color: #fff;
+  background-color: $white;
   top:0;left: 0;right: 0;bottom: 0;margin:auto;
   transition: all 0.5s;
   z-index: 5;
