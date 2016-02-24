@@ -11,8 +11,8 @@ body{
 
 div.button{
   padding:13px 23px;
-  border: 1px solid #EE3769;
-  background-color: #EE3769;
+  border: 1.5px solid $greenish;
+  background-color: $blueish;
   color: $white;
   display:inline-block;
   font-size: 14px;
@@ -32,8 +32,8 @@ div.button.line span.animator{
   top:0;
   left:-10px;
   transition: all 0.5s;
-  transform: skewX(-20deg);
-  z-index: 5;
+  transform: skewX(-50deg);
+  z-index: 10;
 }
 
 div.button.line span.content{
@@ -43,7 +43,7 @@ div.button.line span.content{
 }
 
 div.button.line span.animator{
-  transform:translateX(-300px) skewX(-20deg);
+  transform:translateY(-100px) skewX(30deg);
 }
 
 div.button.line:hover{ cursor:pointer; }
@@ -53,7 +53,7 @@ div.button.line:hover span.animator{
 }
 
 div.button.line:hover span.content{
-  color:#EE3769;
+  color: $blueish;
 }
 
 /* ROUND */
@@ -90,7 +90,7 @@ div.button.round:hover span.animator{
 }
 
 div.button.round:hover span.content{
-  color:#EE3769;
+  color: $blueish;
 }
 
 /* ROUND 2 */

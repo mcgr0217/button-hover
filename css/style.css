@@ -9,8 +9,8 @@ body {
 /* ------ */
 div.button {
   padding: 13px 23px;
-  border: 1px solid #EE3769;
-  background-color: #EE3769;
+  border: 1.5px solid #b3ff99;
+  background-color: #00b3b3;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -29,8 +29,8 @@ div.button.line span.animator {
   top: 0;
   left: -10px;
   transition: all 0.5s;
-  transform: skewX(-20deg);
-  z-index: 5;
+  transform: skewX(-50deg);
+  z-index: 10;
 }
 
 div.button.line span.content {
@@ -40,7 +40,7 @@ div.button.line span.content {
 }
 
 div.button.line span.animator {
-  transform: translateX(-300px) skewX(-20deg);
+  transform: translateY(-100px) skewX(30deg);
 }
 
 div.button.line:hover {
@@ -52,7 +52,7 @@ div.button.line:hover span.animator {
 }
 
 div.button.line:hover span.content {
-  color: #EE3769;
+  color: #00b3b3;
 }
 
 /* ROUND */
@@ -93,7 +93,7 @@ div.button.round:hover span.animator {
 }
 
 div.button.round:hover span.content {
-  color: #EE3769;
+  color: #00b3b3;
 }
 
 /* ROUND 2 */
