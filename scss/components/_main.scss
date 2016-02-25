@@ -1,0 +1,118 @@
+body{
+  text-align:center;
+  margin-top: 100px;
+  font-family: "Open Sans", sans-serif;
+  background-color: $white;
+}
+
+
+/* COMMON */
+/* ------ */
+
+div.button{
+  padding:13px 23px;
+  border: 1.5px solid $greenish;
+  background-color: $blueish;
+  color: $white;
+  display:inline-block;
+  font-size: 14px;
+  position: relative;
+  overflow:hidden;
+  border-radius: 3px;
+}
+
+/* LINE */
+/* ---- */
+
+div.button.line span.animator{
+  width: 300px;
+  height: 100%;
+  position:absolute;
+  background-color: $white;
+  top:0;
+  left:-10px;
+  transition: all 0.5s;
+  transform: skewX(-50deg);
+  z-index: 10;
+}
+
+div.button.line span.content{
+  transition: all 0.4s;
+  position: relative;
+  z-index: 10;
+}
+
+div.button.line span.animator{
+  transform:translateY(-100px) skewX(30deg);
+}
+
+div.button.line:hover{ cursor:pointer; }
+
+div.button.line:hover span.animator{
+  transform:translateX(0) skewX(-20deg);
+}
+
+div.button.line:hover span.content{
+  color: $blueish;
+}
+
+/* ROUND */
+/* ----- */
+
+
+div.button.round span.animator{
+  width: 10px;
+  height: 10px;
+  border-radius:300px;
+  position:absolute;
+  background-color: $white;
+  top:0;left: 0;right: 0;bottom: 0;margin:auto;
+  transition: all 0.5s;
+  z-index: 5;
+}
+
+div.button.round span.content{
+  transition: all 0.4s;
+  position: relative;
+  z-index: 10;
+}
+
+div.button.round span.animator{
+  opacity: 1;
+  transform: scale(0.1);
+}
+
+div.button.round:hover{ cursor:pointer; }
+
+div.button.round:hover span.animator{
+  opacity: 1;
+  transform:scale(30);
+}
+
+div.button.round:hover span.content{
+  color: $blueish;
+}
+
+/* ROUND 2 */
+/* ------- */
+
+div.button.round2 span.animator{
+  transition-delay:0.1s;
+}
+
+div.button.round2 span.animator2{
+  width: 10px;
+  height: 10px;
+  border-radius:300px;
+  position:absolute;
+  background-color: $white;
+  top:0;left: 0;right: 0;bottom: 0;margin:auto;
+  transition: all 0.5s;
+  z-index: 5;
+  opacity: 0;
+}
+
+div.button.round2:hover span.animator2{
+  opacity: 0.5;
+  transform:scale(30);
+}
